@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vedseem</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact button (desktop) -->
+      <a href="#" class="contact-btn">Contact Us</a>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <ul>
+          <li><a href="#" class="mobile-link">Home</a></li>
+          <li><a href="#about" class="mobile-link">About Us</a></li>
+          <li><a href="#" class="mobile-link">Service</a></li>
+          <li><a href="#" class="mobile-link">Projects</a></li>
+          <li><a href="#" class="mobile-link">Team</a></li>
+          <li><a href="#" class="mobile-link contact-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        <span>DESIGN.</span>
+        <span>DEVELOP. DELIVER.</span>
+      </h1>
+      <p class="hero-sub">
+        From concept to deployment, we create cutting-edge software solutions that
+        drive business growth and deliver exceptional user experiences.
+      </p>
+      <a href="#" class="cta">Get Started</a>
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="about-bg" aria-hidden="true">About</h2>
+
+    <div class="about-container">
+      <div class="about-text">
+        <div class="about-label">About Us</div>
+
+        <h3 class="about-title">Figma ipsum component<br>variant main layer.</h3>
+
+        <p class="about-desc">
+          Figma ipsum component variant main layer. Community selection project subtract clip team component duplicate stroke outline.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-number">52%</div>
+            <div class="stat-text">Figma ipsum component variant main layer. Community selection project subtract clip team component duplicate stroke outline.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">48%</div>
+            <div class="stat-text">Figma ipsum component variant main layer. Community selection project subtract clip team component duplicate stroke outline.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-image">
+        <img src="assets/tech lady.jpg" alt="Team / image">
+        <div class="badge">
+          <div class="icon">🏆</div>
+          <div class="texts">
+            <p class="t1">Award Wining</p>
+            <p class="t2">Tech innovation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <img src="assets/gear img.png" 
+     alt="Decorative Gears"
+     class="about-deco">
+
+  </section>
+
+
+
+  <!-- 3 Page -->
+   <section class="services" id="services">
+  <h2 class="services-bg" aria-hidden="true">Services</h2>
+  <div class="services-label">------------------- Our services</div>
+
+  <div class="services-list">
+    <!-- Service 1 -->
+    <div class="service-item">
+      <div class="service-left">
+        <span class="service-number">1.</span>
+        <h3 class="service-title">Development</h3>
+      </div>
+      <div class="service-content">
+      <p class="service-desc">
+        Figma ipsum component variant main layer. Community selection project subtract clip team
+        component duplicate stroke outline.
+      </p>
+      <img src="assets/development.png" alt="Development Illustration" class="service-img">
+      </div>
+     <div class="service-icon"><i class="ri-code-s-slash-line"></i></div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-item">
+      <div class="service-left">
+        <span class="service-number">2.</span>
+        <h3 class="service-title">Web Design</h3>
+      </div>
+      <div class="service-content">
+      <p class="service-desc">
+        Figma ipsum component variant main layer. Community selection project subtract clip team
+        component duplicate stroke outline.
+      </p>
+      <img src="assets/webdesign.png" alt="Web Design Illustration" class="service-img">
+    </div>
+    <div class="service-icon"><i class="ri-html5-line"></i></div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-item">
+      <div class="service-left">
+        <span class="service-number">3.</span>
+        <h3 class="service-title">UI/UX</h3>
+      </div>
+      <div class="service-content">
+      <p class="service-desc">
+        Figma ipsum component variant main layer. Community selection project subtract clip team
+        component duplicate stroke outline.
+      </p>
+      <img src="assets/uiux.png" alt="UI/UX Illustration" class="service-img">
+    </div>
+    <div class="service-icon"><i class="ri-pages-line"></i></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>
