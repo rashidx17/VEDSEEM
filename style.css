@@ -694,7 +694,7 @@ background: linear-gradient(180deg, #3E0185, #6303D4, #22014A);
   font-size: 180px;
   font-weight: 600;
   color: transparent;
-  -webkit-text-stroke: 1.2px rgba(255,255,255,0.08);
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.15);
   line-height: 1;
   z-index: 1;
   pointer-events: none;
@@ -910,4 +910,44 @@ background: linear-gradient(180deg, #3E0185, #6303D4, #22014A);
   .services-bg { font-size: 46px; }
   .service-title { font-size: 16px; }
   .service-number { font-size: 24px; }
+}
+
+
+/* ===== Scroll Animations ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.fade-up.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+
+.scale-up {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s ease-out;
+}
+.scale-up.appear {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ===== Continuous Bounce for Headings ===== */
+.heading-bounce.appear {
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }

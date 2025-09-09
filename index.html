@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-
 </head>
 <body>
 
@@ -24,10 +23,9 @@
         </ul>
       </nav>
 
-      <!-- Contact button (desktop) -->
       <a href="#" class="contact-btn">Contact Us</a>
 
-      <!-- Hamburger (mobile only) -->
+      <!-- Hamburger -->
       <button class="hamburger" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
         <span class="line line1"></span>
         <span class="line line2"></span>
@@ -35,7 +33,7 @@
       </button>
     </div>
 
-    <!-- Mobile menu (hidden by default) -->
+    <!-- Mobile menu -->
     <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
       <div class="mobile-menu-inner">
         <ul>
@@ -53,33 +51,31 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-inner">
-      <h1 class="hero-title">
+      <h1 class="hero-title fade-up">
         <span>DESIGN.</span>
         <span>DEVELOP. DELIVER.</span>
       </h1>
-      <p class="hero-sub">
+      <p class="hero-sub fade-up">
         From concept to deployment, we create cutting-edge software solutions that
         drive business growth and deliver exceptional user experiences.
       </p>
-      <a href="#" class="cta">Get Started</a>
-      <div class="mouse"><div class="wheel"></div></div>
+      <a href="#" class="cta scale-up">Get Started</a>
+      <div class="mouse fade-in"><div class="wheel"></div></div>
     </div>
   </section>
 
+  <!-- About Section -->
   <section class="about" id="about">
-    <h2 class="about-bg" aria-hidden="true">About</h2>
+    <h2 class="about-bg fade-up heading-bounce" aria-hidden="true">About</h2>
 
     <div class="about-container">
-      <div class="about-text">
-        <div class="about-label">About Us</div>
-
-        <h3 class="about-title">Figma ipsum component<br>variant main layer.</h3>
-
-        <p class="about-desc">
+      <div class="about-text fade-up">
+        <div class="about-label fade-up">About Us</div>
+        <h3 class="about-title fade-up">Figma ipsum component<br>variant main layer.</h3>
+        <p class="about-desc fade-up">
           Figma ipsum component variant main layer. Community selection project subtract clip team component duplicate stroke outline.
         </p>
-
-        <div class="about-stats">
+        <div class="about-stats fade-up">
           <div class="stat">
             <div class="stat-number">52%</div>
             <div class="stat-text">Figma ipsum component variant main layer. Community selection project subtract clip team component duplicate stroke outline.</div>
@@ -91,7 +87,7 @@
         </div>
       </div>
 
-      <div class="about-image">
+      <div class="about-image fade-in">
         <img src="assets/tech lady.jpg" alt="Team / image">
         <div class="badge">
           <div class="icon">🏆</div>
@@ -103,73 +99,63 @@
       </div>
     </div>
     
-    <img src="assets/gear img.png" 
-     alt="Decorative Gears"
-     class="about-deco">
-
+    <img src="assets/gear img.png" alt="Decorative Gears" class="about-deco">
   </section>
 
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2 class="services-bg fade-up heading-bounce" aria-hidden="true">Services</h2>
+    <div class="services-label fade-up">------------------- Our services</div>
 
-
-  <!-- 3 Page -->
-   <section class="services" id="services">
-  <h2 class="services-bg" aria-hidden="true">Services</h2>
-  <div class="services-label">------------------- Our services</div>
-
-  <div class="services-list">
-    <!-- Service 1 -->
-    <div class="service-item">
-      <div class="service-left">
-        <span class="service-number">1.</span>
-        <h3 class="service-title">Development</h3>
+    <div class="services-list">
+      <div class="service-item fade-up">
+        <div class="service-left">
+          <span class="service-number">1.</span>
+          <h3 class="service-title">Development</h3>
+        </div>
+        <div class="service-content">
+          <p class="service-desc">
+            Figma ipsum component variant main layer. Community selection project subtract clip team
+            component duplicate stroke outline.
+          </p>
+          <img src="assets/development.png" alt="Development Illustration" class="service-img">
+        </div>
+        <div class="service-icon"><i class="ri-code-s-slash-line"></i></div>
       </div>
-      <div class="service-content">
-      <p class="service-desc">
-        Figma ipsum component variant main layer. Community selection project subtract clip team
-        component duplicate stroke outline.
-      </p>
-      <img src="assets/development.png" alt="Development Illustration" class="service-img">
+
+      <div class="service-item fade-up">
+        <div class="service-left">
+          <span class="service-number">2.</span>
+          <h3 class="service-title">Web Design</h3>
+        </div>
+        <div class="service-content">
+          <p class="service-desc">
+            Figma ipsum component variant main layer. Community selection project subtract clip team
+            component duplicate stroke outline.
+          </p>
+          <img src="assets/webdesign.png" alt="Web Design Illustration" class="service-img">
+        </div>
+        <div class="service-icon"><i class="ri-html5-line"></i></div>
       </div>
-     <div class="service-icon"><i class="ri-code-s-slash-line"></i></div>
-    </div>
 
-    <!-- Service 2 -->
-    <div class="service-item">
-      <div class="service-left">
-        <span class="service-number">2.</span>
-        <h3 class="service-title">Web Design</h3>
+      <div class="service-item fade-up">
+        <div class="service-left">
+          <span class="service-number">3.</span>
+          <h3 class="service-title">UI/UX</h3>
+        </div>
+        <div class="service-content">
+          <p class="service-desc">
+            Figma ipsum component variant main layer. Community selection project subtract clip team
+            component duplicate stroke outline.
+          </p>
+          <img src="assets/uiux.png" alt="UI/UX Illustration" class="service-img">
+        </div>
+        <div class="service-icon"><i class="ri-pages-line"></i></div>
       </div>
-      <div class="service-content">
-      <p class="service-desc">
-        Figma ipsum component variant main layer. Community selection project subtract clip team
-        component duplicate stroke outline.
-      </p>
-      <img src="assets/webdesign.png" alt="Web Design Illustration" class="service-img">
     </div>
-    <div class="service-icon"><i class="ri-html5-line"></i></div>
-    </div>
+  </section>
 
-    <!-- Service 3 -->
-    <div class="service-item">
-      <div class="service-left">
-        <span class="service-number">3.</span>
-        <h3 class="service-title">UI/UX</h3>
-      </div>
-      <div class="service-content">
-      <p class="service-desc">
-        Figma ipsum component variant main layer. Community selection project subtract clip team
-        component duplicate stroke outline.
-      </p>
-      <img src="assets/uiux.png" alt="UI/UX Illustration" class="service-img">
-    </div>
-    <div class="service-icon"><i class="ri-pages-line"></i></div>
-    </div>
-  </div>
-</section>
-
-
-
-<script src="script.js"></script>
-
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
