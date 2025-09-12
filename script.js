@@ -59,3 +59,69 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+
+
+
+
+// ---------------- Page 4 video autoplay + toggle ----------------
+(function setupPage4Video() {
+  const video = document.getElementById("page4-video");
+  const btn = document.getElementById("page4-play");
+  if (!video || !btn) return;
+
+  video.muted = true; // required for autoplay
+
+  // Try autoplay
+  const attempt = video.play();
+  if (attempt !== undefined) {
+    attempt.then(() => {
+      // autoplay success → hide button
+      btn.classList.add("playing");
+    }).catch(() => {
+      // autoplay blocked → keep button visible
+      btn.classList.remove("playing");
+    });
+  }
+
+  // Toggle on click
+  function togglePlay() {
+    if (video.paused) {
+      video.play().then(() => {
+        btn.classList.add("playing");
+      }).catch(() => {});
+    } else {
+      video.pause();
+      btn.classList.remove("playing");
+    }
+  }
+
+  btn.addEventListener("click", togglePlay);
+  video.addEventListener("click", togglePlay);
+
+  // Keep button in sync if user presses keyboard controls
+  video.addEventListener("pause", () => btn.classList.remove("playing"));
+  video.addEventListener("play", () => btn.classList.add("playing"));
+})();
+
+
+// Page 4 scroll-triggered animations
+document.addEventListener("DOMContentLoaded", () => {
+  const page4 = document.querySelector(".page4");
+  if (!page4) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          page4.classList.add("in-view");
+          observer.unobserve(page4); // trigger once
+        }
+      });
+    },
+    { threshold: 0.3 } // 30% visible before triggering
+  );
+
+  observer.observe(page4);
+});
+
+
