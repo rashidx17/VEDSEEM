@@ -3522,3 +3522,22 @@ PROJECTS END
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+/* Make timeline cards visible on smaller screens when the animated line is hidden */
+@media (max-width: 900px) {
+  .checkpoint .content {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    display: flex; /* if your layout expects flex */
+  }
+
+  /* keep the central line hidden on small screens */
+  .timeline::before,
+  .timeline::after,
+  .timeline-line {
+    display: none !important;
+  }
+}
