@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About Us</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="aboutus.css" />
+  </head>
+  <body>
+    <div id="main">
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Header / Navbar -->
+    <header class="header" role="banner">
+      <div class="header-inner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="../Services/services.html">Services</a></li>
+            <li><a href="../Projects/projects.html">Projects</a></li>
+            <li><a href="../Team/team.html">Team</a></li>
+          </ul>
+        </nav>
+
+        <a href="../Contact/contact.html" class="contact-btn">Contact Us</a>
+
+        <!-- Hamburger -->
+        <button
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-hidden="true"
+      >
+        <div class="mobile-menu-inner" tabindex="-1">
+          <ul>
+            <li><a href="../index.html" class="mobile-link">Home</a></li>
+            <li>
+              <a href="../AboutUs/aboutus.html" class="mobile-link">About Us</a>
+            </li>
+            <li><a href="../Services/services.html" class="mobile-link">Services</a></li>
+            <li><a href="../Projects/projects.html" class="mobile-link">Projects</a></li>
+            <li><a href="../Team/team.html" class="mobile-link">Team</a></li>
+            <li>
+              <a href="../Contact/contact.html" class="mobile-link contact-link"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main id="main-content">
+      <section data-scroll data-scroll-speed="-5" class="hero">
+        <div class="hero-inner">
+          <h1 class="hero-title fade-up">
+            We’re Engineers of Intelligent Change
+          </h1>
+          <p class="hero-sub fade-up">
+            We design and develop smart, scalable, and innovative software
+            solutions that not only meet current needs but also prepare
+            businesses for future challenges.
+          </p>
+          <a class="cta scale-up" href="#contact">Get In Touch</a>
+        </div>
+
+        <div class="about-bg" aria-hidden="true">About Us</div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats" aria-label="Company stats">
+        <div class="stats-container">
+          <div class="stat-box fade-up">
+            <h3 class="stat-value">20+</h3>
+            <p class="stat-label">Clients</p>
+          </div>
+          <div class="stat-box fade-up">
+            <h3 class="stat-value">100%</h3>
+            <p class="stat-label">Happy Clients</p>
+          </div>
+          <div class="stat-box fade-up">
+            <h3 class="stat-value">10+</h3>
+            <p class="stat-label">Projects</p>
+          </div>
+          <div class="stat-box fade-up">
+            <h3 class="stat-value">1+</h3>
+            <p class="stat-label">Years Of Experience</p>
+          </div>
+        </div>
+      </section>
+      <!-- Stats Section End -->
+
+      <!-- START: Story & Mission sections (paste after your .stats section) -->
+      <section id="story-mission" class="story-mission">
+        <!-- Our Story -->
+        <div class="story-mission-section two-col">
+          <div class="col-text animate-from-left">
+            <h2 class="section-heading">Our Story</h2>
+            <div class="section-text">
+              <p>
+                At Vedseem Technologies Pvt. Ltd., our vision is to emerge as a
+                trusted global leader in software development by delivering
+                innovative, reliable, and future-ready digital solutions that
+                help businesses grow and adapt in the fast-changing
+                technological world.
+              </p>
+              <p>
+                We aim to create software that not only solves problems but also
+                adds value to society by improving efficiency, connectivity, and
+                user experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-image" aria-hidden="true">
+            <img
+              src="../assets/globe.png"
+              alt="Decorative globe illustration"
+              class="section-art art-globe"
+            />
+          </div>
+        </div>
+
+        <!-- Our Mission -->
+        <div class="story-mission-section two-col reverse">
+          <div class="col-image" aria-hidden="true">
+            <img
+              src="../assets/target.png"
+              alt="Decorative target illustration"
+              class="section-art art-target"
+            />
+          </div>
+
+          <div class="col-text animate-from-right">
+            <h2 class="section-heading">Our Mission</h2>
+            <div class="section-text">
+              <p>
+                Our mission is to consistently provide high-quality, secure, and
+                scalable software services by using modern technologies,
+                creative ideas, and customer-focused approaches.
+              </p>
+              <p>
+                We are committed to building long-term partnerships with
+                clients, fostering innovation among our teams, and maintaining
+                excellence in every project we undertake. Through dedication,
+                teamwork, and continuous learning, Vedseem Technologies strives
+                to make technology simple, accessible, and impactful for all.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Story & Mission sections -->
+
+      <!-- Founders page  -->
+      <section class="founders-section">
+        <h2 class="founders-title">Our Founders</h2>
+
+        <!-- Founder 1 -->
+        <div class="founders-grid">
+          <div class="founder-photo card">
+            <img
+              src="../assets/person.png"
+              alt="Akash Tripathi — Co Founder & CEO"
+            />
+          </div>
+
+          <div class="name-badge card">
+            <h3 class="founder-name">Akash Tripathi</h3>
+            <p class="founder-role">Director &amp; CEO</p>
+          </div>
+
+          <div class="bio-card card">
+            <h4 class="bio-title">About Aakash</h4>
+            <p class="bio-text">
+              Akash Tripathi, Director & CEO of VEDSEEM INFOTECH PVT LTD, drives digital innovation with end-to-end solutions. Founder of YEAHLO INDIA, he bridges innovation and daily needs, blending strategic leadership with technical expertise to help businesses scale and thrive.
+            </p>
+          </div>
+        </div>
+
+        <!-- ===== Founder 2 (Mirrored layout) ===== -->
+<div class="founders-grid founders-grid--mirror">
+  <div class="founder-photo card">
+    <img src="../assets/person.png"
+         alt="Deependra Soni — Co-Founder & CMO" />
+  </div>
+
+  <div class="name-badge card">
+    <h3 class="founder-name">Deependra Soni</h3>
+    <p class="founder-role">Director &amp; CMO</p>
+  </div>
+
+  <div class="bio-card card">
+    <h4 class="bio-title">Word From Deependra</h4>
+    <p class="bio-text">
+      Kavya leads product & design. She focuses on research-driven
+      UX, growth experiments and turning customer needs into clear roadmaps.
+    </p>
+  </div>
+</div>
+
+
+      </section>
+      <!--End Founders page  -->
+
+
+
+<section class="discuss-section">
+  <div class="discuss-content">
+    <h2>READY TO DISCUSS</h2>
+    <p>Your Product Needs With <span>Catalyst Analytic</span> Experts?</p>
+    <a href="#contact" class="discuss-cta">Get In Touch</a>
+  </div>
+</section>
+
+
+<!-- =========================
+     Site Footer (30vh)
+     ========================= -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-container">
+    
+    <!-- Top row -->
+    <div class="footer-top-row">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="../index.html" class="footer-link">Home</a>
+        <a href="../Services/services.html" class="footer-link">Services</a>
+        <a href="../portfolio.html" class="footer-link">Portfolio</a>
+        <a href="../AboutUs/aboutus.html" class="footer-link">About Us</a>
+        <a href="../careers.html" class="footer-link">Careers</a>
+      </nav>
+
+      <div class="footer-socials">
+        <a href="#" class="social-btn"><i class="ri-facebook-fill"></i></a>
+        <a href="#" class="social-btn"><i class="ri-twitter-fill"></i></a>
+        <a href="#" class="social-btn"><i class="ri-linkedin-fill"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle row -->
+    <div class="footer-middle-row">
+      <div class="footer-contacts">
+        <a href="mailto:contact@vedseem.io" class="contact-item">
+          <i class="ri-mail-line contact-icon"></i>
+          <span class="contact-text">contact@vedseem.io</span>
+        </a>
+        <a href="tel:+14697124672" class="contact-item">
+          <i class="ri-phone-line contact-icon"></i>
+          <span class="contact-text">+1 (469) 712-4672</span>
+        </a>
+        <a href="#" class="contact-item">
+          <i class="ri-map-pin-line contact-icon"></i>
+          <span class="contact-text">Rise incubation centre, jhansi</span>
+        </a>
+      </div>
+
+      <div class="footer-policies">
+        <a href="/privacy.html" class="policy-link">Privacy Policy</a>
+        <a href="/terms.html" class="policy-link">Terms of Service</a>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="footer-bottom-row">
+      <div class="copyright">
+        © 2025 Vedseem Infotech. All rights reserved.
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</main>
+
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="aboutus.js"></script>
+  </body>
+</html>
